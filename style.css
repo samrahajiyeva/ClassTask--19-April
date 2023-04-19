@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header css */
+
+header {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    width: 100%;
+    height: 115px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px;
+    top: 0px;
+    position: sticky;
+    z-index: 2;
+}
+
+.header__left img {
+    width: 230px;
+    height: 230px;
+}
+.header__left img:hover {
+    cursor: pointer;
+}
+.header__middle ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    color: #1b1b1b;
+    font-size: 15px;
+}
+
+.header__middle ul li:first-child {
+    border-bottom: 1px solid #1b1b1b;
+}
+.header__middle ul li:hover {
+    cursor: pointer;
+
+}
+
+
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.header__right i {
+    margin: 0px 15px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.header__right #search:hover {
+   color: rgb(148, 26, 26);
+   transition: 0.7s;
+}
+
+.header__right .newProd {
+    padding: 4px;
+    background-color: rgb(148, 26, 26);
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 37px;
+    border-radius: 5px;
+}
+
+#itemsCounter {
+    position: absolute;
+    top: -3px;
+    left: 88px;
+    color: white;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(148, 26, 26);
+}
+
+
+/* section - 1 css */
+
+.items {
+    width: 1130px;
+    height: 1038px;
+    padding: 57px 15px 75px;
+    margin: 0 auto;
+}
+
+.items__main {
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+
+.items__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.items__header ul {
+    list-style: none;
+    display: flex;
+    align-items: left;
+    gap: 30px;
+    font-size: 14px;
+    padding-left: 0px;
+    color: #1b1b1b;
+}
+
+.items__header ul li:first-child{
+   color: rgb(148, 26, 26);
+}
+
+.items__header ul li:hover {
+    color: rgb(148, 26, 26);
+    transition: 0.3s;
+}
+
+.items__header__filter {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.items__header__filter i {
+   padding: 0px 0px 10px 0px;
+   font-size: 20px;
+}
+
+.items__main__card {
+    width: 245px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.items__main__card__img {
+    width: 245px;
+    height: 316px;
+    margin-bottom: 23px;
+}
+
+.items__main__card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.items__main__card__img img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    transform: scale(1.03);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.items__main__card__body {
+    text-align: center;
+}
+
+.items__main__card__body p {
+    color: #1b1b1b;
+    margin-bottom: 5px;
+}
+
+#card__spans {
+    width: 100%;
+    gap: 10px;
+}
+
+.items__main__card__body .card__spans__dates {
+    color: #afafaf;
+    cursor: pointer;
+}
+
+.same {
+    border: none;
+    background-color: white;
+    color: rgb(148, 26, 26);
+    cursor: pointer;
+    border-radius: 4px;
+}
+.same:hover {
+    color: white;
+    transition: 0.7s;
+    background-color: rgb(148, 26, 26);
+}
+
+.addNewCar {
+    top: 450px;
+    position: fixed;
+}
